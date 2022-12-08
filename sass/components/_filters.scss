@@ -1,0 +1,42 @@
+.page-portfolio {
+  display: inherit;
+}
+.filter-list {
+  margin: 0;
+  padding: 0;
+  width: 1200px;
+  display: inline-flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  &__button {
+    padding: 6px 22px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: $normal;
+    font-size: $small;
+    line-height: calc(26 / 16);
+    text-align: center;
+    color: take-color("dark-black");
+    background-color: take-color("light-white");
+    border-radius: 4px;
+    border: transparent;
+    transition: color $duration $bezier, background-color $duration $bezier,
+      box-shadow $duration $bezier;
+    &--padding {
+      padding: 6px 25px;
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      color: take-color("white");
+      background-color: take-color("blue");
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

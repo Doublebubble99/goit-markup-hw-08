@@ -1,0 +1,107 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__webstudio {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.webstudio__web {
+  color: take-color("blue");
+}
+.webstudio__studio--black {
+  color: take-color("black");
+}
+.nav {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    overflow: hidden;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+.nav__link {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: take-color("dark-black");
+  transition: color $duration $bezier;
+  &:hover,
+  &:focus {
+    color: take-color("blue");
+  }
+  &:hover::after,
+  &:focus::after {
+    transform: translateX(0);
+  }
+}
+.nav__link--active {
+  color: take-color("blue");
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: take-color("blue");
+    bottom: 0;
+  }
+}
+.nav__link--line {
+  &::after {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    transform: translateX(-100%);
+    background-color: take-color("blue");
+    bottom: 0;
+    transition: transform $duration $bezier;
+    min-width: 100%;
+  }
+}
+.list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: take-color("grey");
+    transition: color $duration $bezier;
+    &:hover,
+    &:focus {
+      color: take-color("blue");
+    }
+  }
+  &__icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,34 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.section {
+  padding: 94px 0;
+}
+.container {
+  display: flex;
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  align-items: center;
+}
+.webstudio {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+}
+.benefits__title,
+.doing__title,
+.team__title,
+.page-portfolio__title,
+.client__title {
+  @extend %title;
+}

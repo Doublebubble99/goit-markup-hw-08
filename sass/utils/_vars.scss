@@ -1,0 +1,17 @@
+$color: (
+  "blue": #2196f3,
+  "light-blue": #188ce8,
+  "white": #ffffff,
+  "light-black": #2f303a,
+  "grey": #757575,
+  "light-grey": #c4c4c4,
+  "dark-grey": #afb1b8,
+  "black": #000000,
+  "dark-black": #212121,
+  "light-white": #f5f4fa,
+);
+@function take-color($key) {
+  @return map-get($color, $key);
+}
+$duration: 250ms;
+$bezier: cubic-bezier(0.4, 0, 0.2, 1);

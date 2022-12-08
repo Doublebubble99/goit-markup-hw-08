@@ -1,0 +1,48 @@
+.hero-section {
+  max-width: 1600px;
+  display: flex;
+  padding: 200px 0;
+  background-color: take-color("light-grey");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.main {
+  display: block;
+  &__title {
+    width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: $extra-bold;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: take-color("white");
+  }
+  &__button {
+    @include button();
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 216px;
+    height: 50px;
+    padding: 0;
+    border: transparent;
+    transition: background-color $duration $bezier;
+    &:active,
+    &:hover,
+    &:focus {
+      background-color: take-color("light-blue");
+    }
+  }
+}

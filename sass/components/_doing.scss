@@ -1,0 +1,42 @@
+.who-we-are {
+  padding-bottom: 94px;
+}
+.doing {
+  display: inherit;
+}
+.doing__title,
+.team__title,
+.client__title {
+  margin-bottom: 50px;
+}
+.doing-list {
+  display: inline-flex;
+  column-gap: 30px;
+  &__item {
+    width: 370px;
+    height: 294px;
+  }
+}
+.doing-thumb {
+  position: relative;
+  overflow: hidden;
+  &__picture {
+    display: block;
+  }
+  &__overlay {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  &__text {
+    @include subtitle(take-color("white"));
+    text-align: center;
+  }
+}

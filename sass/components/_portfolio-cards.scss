@@ -1,0 +1,64 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  &__item {
+    background-color: take-color("white");
+    flex-basis: calc((100% - 60px) / 3);
+    max-width: 370px;
+    height: 404px;
+  }
+  &__link {
+    display: block;
+    transition: box-shadow $duration $bezier;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+.portfolio-thumb {
+  overflow: hidden;
+  position: relative;
+  &__picture {
+    display: block;
+  }
+  &__overlay {
+    padding: 63px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform $duration $bezier;
+    .card-list__link:hover & {
+      transform: translateY(0);
+    }
+  }
+  &__description {
+    font-size: $little;
+    line-height: calc(28 / 18);
+    color: take-color("white");
+  }
+}
+.text-portfolio {
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  &__subtitle {
+    font-weight: $bold;
+    font-size: $little;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: take-color("dark-black");
+  }
+  &__item {
+    font-size: $small;
+    line-height: calc(30 / 16);
+    color: take-color("grey");
+  }
+}
