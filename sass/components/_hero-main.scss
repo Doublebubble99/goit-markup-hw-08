@@ -1,7 +1,8 @@
 .hero-section {
-  max-width: 1600px;
-  display: flex;
-  padding: 200px 0;
+  // max-width: 1600px;
+  max-width: 480px;
+  // display: flex;
+  padding: 118px 0;
   background-color: take-color("light-grey");
   background-image: linear-gradient(
       to right,
@@ -17,13 +18,15 @@
 .main {
   display: block;
   &__title {
-    width: 696px;
+    // width: 696px;
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
     font-weight: $extra-bold;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    // font-size: 44px;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    // line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;

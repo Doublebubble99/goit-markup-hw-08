@@ -9,20 +9,25 @@ body {
   box-sizing: border-box;
 }
 .section {
-  padding: 94px 0;
+  // padding: 94px 0;
+  padding: 60px 0;
 }
 .container {
-  display: flex;
-  width: 1200px;
+  // display: flex;
+  // width: 1200px;
+  max-width: 480px;
   padding: 0 15px;
-  margin: 0 auto;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  // align-items: center;
 }
 .webstudio {
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
+  /* font-size: 26px;
+  /*line-height: calc(31 / 26);*/
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
 }
 .benefits__title,

@@ -7,8 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale = 1.0">
   <title>Головна</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="dist/css/main.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
 </head>
@@ -16,38 +15,59 @@
 <body>
   <header class="header">
     <!-- Contacts  -->
-    <div class="container">
+    <div class="container header__container">
       <a href="" rel="noopener noreferrer nofollow" class="link webstudio header__webstudio"><span
           class="webstudio__web">Web</span><span class="webstudio__studio webstudio__studio--black">Studio</span></a>
-      <nav class="nav">
-        <ul class="nav__list list">
-          <li class="nav__item">
-            <a href="./index.html" class="nav__link nav__link--active link">Студія</a>
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#menu_40px"></use>
+        </svg>
+      </button>
+      <div class="mobile-container">
+        <nav class="nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--active link">Студія</a>
+            </li>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link nav__link--line link">Портфоліо</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list-contacts list">
+          <li class="list-contacts__item">
+            <a href="mailto:info@devstudio.com" class="list-contacts__mail link">
+              <svg class="list-contacts__icon" width="16" height="12">
+                <use class="mail__item" href="./images/icons.svg#envelope-icon"></use>
+              </svg>info@devstudio.com
+            </a>
           </li>
-          <li class="nav__item">
-            <a href="./portfolio.html" class="nav__link nav__link--line link">Портфоліо</a>
-          </li>
-          <li class="nav__item">
-            <a href="" class="nav__link link">Контакти</a>
+          <li class="list-contacts__item">
+            <a href="tel:380961111111" class="list-contacts__tel link">
+              <svg class="list-contacts__icon" width="10" height="16">
+                <use class="phone__item" href="./images/icons.svg#smartphone-icon"></use>
+              </svg>+38 096 111 11 11
+            </a>
           </li>
         </ul>
-      </nav>
-      <ul class="list-contacts list">
-        <li class="list-contacts__item">
-          <a href="mailto:info@devstudio.com" class="list-contacts__link link">
-            <svg class="list-contacts__icon" width="16" height="12">
-              <use class="mail__item" href="./images/icons.svg#envelope-icon"></use>
-            </svg>info@devstudio.com
-          </a>
-        </li>
-        <li class="list-contacts__item">
-          <a href="tel:380961111111" class="list-contacts__link link">
-            <svg class="list-contacts__icon" width="10" height="16">
-              <use class="phone__item" href="./images/icons.svg#smartphone-icon"></use>
-            </svg>+38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+        <ul class="header-social list">
+          <li class="header-social__item">
+            <a href="" class="header-social__link link">Інстаграм <span class="header-social__sign"></span></a>
+          </li>
+          <li class="header-social__item">
+            <a href="" class="header-social__link link">Твітер <span class="header-social__sign"></span></a>
+          </li>
+          <li class="header-social__item">
+            <a href="" class="header-social__link link">Фейсбук <span class="header-social__sign"></span></a>
+          </li>
+          <li class="header-social__item">
+            <a href="" class="header-social__link link">Лінкедин</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -458,6 +478,62 @@
       </form>
     </div>
   </div>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use href="./images/icons.svg#close_40px"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu">
+      <nav class="nav">
+        <ul class="nav__list list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link nav__link--active link">Студія</a>
+          </li>
+          <li class="nav__item">
+            <a href="./portfolio.html" class="nav__link nav__link--line link">Портфоліо</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list-contacts list">
+        <li class="list-contacts__item">
+          <a href="mailto:info@devstudio.com" class="list-contacts__mail link">
+            <svg class="list-contacts__icon" width="16" height="12">
+              <use class="mail__item" href="./images/icons.svg#envelope-icon"></use>
+            </svg>info@devstudio.com
+          </a>
+        </li>
+        <li class="list-contacts__item">
+          <a href="tel:380961111111" class="list-contacts__tel link">
+            <svg class="list-contacts__icon" width="10" height="16">
+              <use class="phone__item" href="./images/icons.svg#smartphone-icon"></use>
+            </svg>+38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+      <ul class="header-social list">
+        <li class="header-social__item">
+          <a href="" class="header-social__link link">Інстаграм<span class="header-social__sign"></span></a>
+        </li>
+        <li class="header-social__item">
+          <a href="" class="header-social__link link">Твітер<span class="header-social__sign"></span></a>
+        </li>
+        <li class="header-social__item">
+          <a href="" class="header-social__link link">Фейсбук<span class="header-social__sign"></span></a>
+        </li>
+        <li class="header-social__item">
+          <a href="" class="header-social__link link">Лінкедин</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
