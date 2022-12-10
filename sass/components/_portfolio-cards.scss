@@ -1,12 +1,16 @@
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
   gap: 30px;
   &__item {
     background-color: take-color("white");
-    flex-basis: calc((100% - 60px) / 3);
-    max-width: 370px;
-    height: 404px;
+    // flex-basis: calc((100% - 60px) / 3);
+    // max-width: 370px;
+    // height: 404px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   &__link {
     display: block;
@@ -22,10 +26,11 @@
   overflow: hidden;
   position: relative;
   &__picture {
-    display: block;
+    width: 100%;
   }
   &__overlay {
-    padding: 63px 24px;
+    // padding: 63px 24px;
+    padding: 77px 24px;
     position: absolute;
     top: 0;
     left: 0;

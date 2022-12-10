@@ -5,23 +5,30 @@
   display: inherit;
 }
 .team-list {
-  display: flex;
+  display: block;
   column-gap: 30px;
   &__item {
     background-color: take-color("white");
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    max-width: 270px;
+    // max-width: 270px;
     flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
   &__picture {
-    display: block;
+    width: 100%;
   }
 }
 .member-position {
   padding-top: 30px;
-  padding-bottom: 30px;
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 24px;
+  }
+  // padding-bottom: 30px;
   &__name {
     margin-bottom: 10px;
     font-weight: $normal;

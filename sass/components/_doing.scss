@@ -1,13 +1,11 @@
 .who-we-are {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-bottom: 94px;
 }
 .doing {
   display: inherit;
-}
-.doing__title,
-.team__title,
-.client__title {
-  margin-bottom: 50px;
 }
 .doing-list {
   display: inline-flex;

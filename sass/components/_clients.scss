@@ -3,15 +3,21 @@
 }
 .logo-list {
   display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   &__item {
     display: flex;
-    width: 170px;
+    @media screen and (max-width: 767px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
     height: 92px;
     margin-right: auto;
     margin-left: auto;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    // &:not(:last-child) {
+    //   // margin-right: 30px;
+    // }
   }
 }
 .logo-link {

@@ -1,20 +1,25 @@
 .page-portfolio {
-  display: inherit;
+  // display: inherit;
 }
 .filter-list {
   margin: 0;
   padding: 0;
-  width: 1200px;
+  // width: 1200px;
   display: inline-flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  width: 350px;
+  row-gap: 15px;
+  // justify-content: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  // margin-bottom: 50px;
+  margin-bottom: 40px;
   &__item:not(:last-child) {
     margin-right: 8px;
   }
   &__button {
     padding: 6px 22px;
+    display: inline-block;
     cursor: pointer;
     font-family: inherit;
     font-weight: $normal;

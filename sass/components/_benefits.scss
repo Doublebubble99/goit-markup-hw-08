@@ -2,10 +2,16 @@
   &__subtitle {
     @include subtitle(take-color("dark-black"));
     margin-bottom: 10px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__text {
     line-height: calc(24 / 14);
     color: var(--grey-color);
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
   }
 }
 .benefits-list {
@@ -14,14 +20,15 @@
   row-gap: 10px;
   flex-grow: 1;
   &__item {
-    width: 270px;
+    // width: 270px;
+    width: 100%;
   }
 }
 .icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
