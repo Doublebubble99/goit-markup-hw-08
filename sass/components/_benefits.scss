@@ -16,12 +16,14 @@
 }
 .benefits-list {
   display: inherit;
-  column-gap: 30px;
-  row-gap: 10px;
-  flex-grow: 1;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+  }
   &__item {
     // width: 270px;
-    width: 100%;
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 .icon-container {

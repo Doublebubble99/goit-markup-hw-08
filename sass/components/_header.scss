@@ -1,21 +1,23 @@
 .header {
   border-bottom: 1px solid #ececec;
-  // display: flex;
-  // align-items: center;
-  // justify-content: space-between;
   height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
   &__container {
     display: flex;
     align-items: center;
     position: relative;
+    margin: 0;
     justify-content: space-between;
+    height: 100%;
+    width: 480px;
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
   }
   &__webstudio {
-    // margin-right: 93px;
-    // padding-top: 24px;
-    // padding-bottom: 25px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    margin-right: 93px;
   }
 }
 .webstudio__web {
@@ -26,6 +28,13 @@
 }
 .header-menu {
   display: none;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 }
 .nav {
   &__list {
@@ -33,35 +42,34 @@
     justify-content: space-between;
   }
   &__item {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     align-items: center;
     overflow: hidden;
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
     &:not(:last-child) {
-      margin-bottom: 32px;
-      // margin-right: 50px;
+      margin-right: 50px;
     }
   }
 }
 .nav__link {
-  position: relative;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: calc(47 / 40);
-  // font-size: 14px;
-  // line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: take-color("dark-black");
-  transition: color $duration $bezier;
-  &:hover,
-  &:focus {
-    color: take-color("blue");
-  }
-  &:hover::after,
-  &:focus::after {
-    transform: translateX(0);
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: take-color("dark-black");
+    transition: color $duration $bezier;
+    &:hover,
+    &:focus {
+      color: take-color("blue");
+    }
+    &:hover::after,
+    &:focus::after {
+      transform: translateX(0);
+    }
   }
 }
 .nav__link--active {
@@ -82,7 +90,7 @@
 .nav__link--line {
   @media screen and (min-width: 768px) {
     &::after {
-      display: none;
+      display: block;
       position: absolute;
       content: "";
       height: 4px;
@@ -96,21 +104,14 @@
   }
 }
 .list-contacts {
-  margin-left: auto;
   align-items: center;
-  &__item {
-    &:not(:last-child) {
-      margin-top: 32px;
-    }
+  &__item:first-child {
+    margin-bottom: 10px;
   }
   &__link {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     font-weight: 500;
-    // font-size: 14px;
-    // line-height: calc(16 / 14);
-    font-size: 24px;
-    line-height: calc(28 / 24);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     color: take-color("grey");
     transition: color $duration $bezier;
@@ -122,7 +123,7 @@
   &__icon {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 8px;
     background-size: cover;
     background-position: center;
     fill: currentColor;

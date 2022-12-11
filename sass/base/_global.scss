@@ -15,11 +15,12 @@ body {
 .container {
   // display: flex;
   // width: 1200px;
-  max-width: 480px;
+  width: 480px;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  // align-items: center;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
 .webstudio {
   font-family: "Raleway";
