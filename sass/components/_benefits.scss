@@ -2,28 +2,31 @@
   &__subtitle {
     @include subtitle(take-color("dark-black"));
     margin-bottom: 10px;
-    @media screen and (max-width: 767px) {
-      text-align: center;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: start;
     }
   }
   &__text {
     line-height: calc(24 / 14);
     color: var(--grey-color);
-    @media screen and (max-width: 1199px) {
-      margin-bottom: 30px;
-    }
   }
 }
 .benefits-list {
   display: inherit;
   @media screen and (min-width: 768px) {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
     flex-wrap: wrap;
   }
   &__item {
     // width: 270px;
     flex-basis: calc((100% - 30px) / 2);
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 30px;
+    }
   }
 }
 .icon-container {

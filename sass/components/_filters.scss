@@ -2,18 +2,21 @@
   // display: inherit;
 }
 .filter-list {
-  margin: 0;
-  padding: 0;
   // width: 1200px;
   display: inline-flex;
-  flex-wrap: wrap;
-  width: 350px;
-  row-gap: 15px;
-  // justify-content: center;
-  // margin-left: auto;
-  // margin-right: auto;
   // margin-bottom: 50px;
-  margin-bottom: 40px;
+  @media screen and (max-width: 767.98px) {
+    flex-wrap: wrap;
+    width: 350px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
   &__item:not(:last-child) {
     margin-right: 8px;
   }

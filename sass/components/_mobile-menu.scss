@@ -15,7 +15,7 @@
   cursor: pointer;
   fill: #212121;
   &:hover,
-  &:active {
+  &:focus {
     fill: take-color("blue");
   }
   @media screen and (min-width: 768px) {
@@ -31,6 +31,9 @@
   top: 0;
   left: 0;
   right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
   width: 480px;
   height: 100vh;
   background-color: #fff;

@@ -1,15 +1,17 @@
 .card-list {
-  // display: flex;
-  // flex-wrap: wrap;
-  gap: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   &__item {
     background-color: take-color("white");
     // flex-basis: calc((100% - 60px) / 3);
     // max-width: 370px;
     // height: 404px;
-    width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    // width: 100%;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
     }
   }
   &__link {
@@ -51,6 +53,9 @@
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    padding: 20px 0 20px 24px;
+  }
   &__subtitle {
     font-weight: $bold;
     font-size: $little;

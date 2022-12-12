@@ -23,8 +23,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
-  min-width: 450px;
-  min-height: 609px;
+  width: 450px;
+  height: 609px;
   top: 50%;
   left: 50%;
   z-index: 888;
@@ -134,11 +134,15 @@
       outline: none;
     }
     &::placeholder {
-      // font-size: $tiny;
       line-height: calc(16 / 14);
-      // line-height: calc(14 / 12);
       letter-spacing: 0.01em;
       color: rgba(117, 117, 117, 0.5);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &__textarea-input::placeholder {
+      line-height: calc(14 / 12);
+      font-size: $tiny;
     }
   }
   &__checkbox-label {

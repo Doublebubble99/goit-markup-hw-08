@@ -8,10 +8,7 @@
     gap: 30px;
   }
   &__item {
-    display: flex;
-    @media screen and (max-width: 767px) {
-      flex-basis: calc((100% - 30px) / 2);
-    }
+    flex-basis: calc((100% - 30px) / 2);
     height: 92px;
     margin-right: auto;
     margin-left: auto;
