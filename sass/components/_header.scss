@@ -13,10 +13,6 @@
     margin-left: auto;
     justify-content: space-between;
     height: 100%;
-    width: 480px;
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
   }
   &__webstudio {
     margin-right: 93px;
@@ -107,8 +103,15 @@
 }
 .list-contacts {
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
   &__item:first-child {
     margin-bottom: 10px;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-right: 40px;
+    }
   }
   &__link {
     font-weight: 500;
@@ -120,6 +123,10 @@
     &:hover,
     &:focus {
       color: take-color("blue");
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: calc(16 / 14);
     }
   }
   &__icon {

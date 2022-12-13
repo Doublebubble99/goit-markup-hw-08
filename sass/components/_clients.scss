@@ -3,7 +3,7 @@
 }
 .logo-list {
   display: flex;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     flex-wrap: wrap;
     gap: 30px;
   }
@@ -12,13 +12,16 @@
     height: 92px;
     margin-right: auto;
     margin-left: auto;
-    // &:not(:last-child) {
-    //   // margin-right: 30px;
-    // }
   }
   &__item {
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * 30px) / 3);
+    }
+  }
+  &__item {
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+      flex-basis: calc((100% - 5 * 30px) / 6);
     }
   }
 }

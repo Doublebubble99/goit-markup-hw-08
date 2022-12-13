@@ -1,13 +1,15 @@
 %title {
   font-weight: $bold;
-  @media screen and (max-width: 1199px) {
+  text-align: center;
+  color: take-color("dark-black");
+  @media screen and (max-width: 1199.98px) {
     font-size: 28px;
     line-height: calc(33 / 28);
     margin-bottom: 30px;
   }
-  // margin-bottom: 50px;
-  // font-size: $large;
-  // line-height: calc(42 / 36);
-  text-align: center;
-  color: take-color("dark-black");
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: $large;
+    line-height: calc(42 / 36);
+  }
 }

@@ -12,6 +12,9 @@
     column-gap: 30px;
     row-gap: 30px;
   }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
   &__item {
     background-color: take-color("white");
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -20,20 +23,21 @@
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
     }
-    // max-width: 270px;
-    // flex-basis: calc((100% - 90px) / 4);
     width: 100%;
   }
   &__item:not(:last-child) {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 767.98px) {
       margin-bottom: 30px;
     }
   }
 }
 .member-position {
   padding-top: 30px;
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 1199.98px) {
     padding-bottom: 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
   }
   // padding-bottom: 30px;
   &__name {
