@@ -1,10 +1,5 @@
-.page-portfolio {
-  // display: inherit;
-}
 .filter-list {
-  // width: 1200px;
   display: inline-flex;
-  // margin-bottom: 50px;
   @media screen and (max-width: 767.98px) {
     flex-wrap: wrap;
     width: 350px;
@@ -12,10 +7,13 @@
     margin-bottom: 40px;
   }
   @media screen and (min-width: 768px) {
-    margin-bottom: 30px;
+    margin-bottom: $offset;
     justify-content: center;
     flex-wrap: nowrap;
     width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
   &__item:not(:last-child) {
     margin-right: 8px;

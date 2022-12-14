@@ -68,7 +68,7 @@
   display: block;
   &__title {
     width: 360px;
-    margin-bottom: 30px;
+    margin-bottom: $offset;
     margin-left: auto;
     margin-right: auto;
     font-weight: $extra-bold;

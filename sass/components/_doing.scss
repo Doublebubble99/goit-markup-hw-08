@@ -9,7 +9,7 @@
 }
 .doing-list {
   display: inline-flex;
-  column-gap: 30px;
+  column-gap: $offset;
   &__item {
     width: 370px;
     height: 294px;

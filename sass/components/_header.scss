@@ -37,10 +37,8 @@
 .nav {
   &__list {
     display: flex;
-    justify-content: space-between;
   }
   &__item {
-    align-items: center;
     overflow: hidden;
     position: relative;
     padding-top: 32px;
@@ -54,8 +52,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 32px;
     padding-bottom: 32px;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: $normal;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: take-color("dark-black");
@@ -102,7 +99,6 @@
   }
 }
 .list-contacts {
-  align-items: center;
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -114,8 +110,8 @@
     }
   }
   &__link {
-    font-weight: 500;
-    font-size: 12px;
+    font-weight: $normal;
+    font-size: $tiny;
     line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     color: take-color("grey");
@@ -125,8 +121,9 @@
       color: take-color("blue");
     }
     @media screen and (min-width: 1200px) {
-      font-size: 14px;
       line-height: calc(16 / 14);
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
   &__icon {
@@ -142,7 +139,7 @@
   display: inline-flex;
   margin-top: 64px;
   &__link {
-    font-weight: 500;
+    font-weight: $normal;
     font-size: 18px;
     line-height: calc(22 / 18);
     letter-spacing: 0.02em;

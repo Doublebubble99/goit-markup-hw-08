@@ -9,8 +9,7 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
+    gap: $offset;
   }
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
@@ -27,7 +26,7 @@
   }
   &__item:not(:last-child) {
     @media screen and (max-width: 767.98px) {
-      margin-bottom: 30px;
+      margin-bottom: $offset;
     }
   }
 }
@@ -37,9 +36,8 @@
     padding-bottom: 24px;
   }
   @media screen and (min-width: 1200px) {
-    padding-bottom: 30px;
+    padding-bottom: $offset;
   }
-  // padding-bottom: 30px;
   &__name {
     margin-bottom: 10px;
     font-weight: $normal;

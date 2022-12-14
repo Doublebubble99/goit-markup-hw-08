@@ -9,14 +9,14 @@
   }
   &__text {
     line-height: calc(24 / 14);
-    color: var(--grey-color);
+    color: take-color("grey");
   }
 }
 .benefits-list {
   display: inherit;
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 30px;
+    gap: $offset;
     flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
@@ -27,7 +27,7 @@
   }
   &__item:not(:last-child) {
     @media screen and (max-width: 767.98px) {
-      margin-bottom: 30px;
+      margin-bottom: $offset;
     }
   }
 }
@@ -39,7 +39,7 @@
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  margin-bottom: 30px;
+  margin-bottom: $offset;
   &__image {
     fill: currentColor;
   }

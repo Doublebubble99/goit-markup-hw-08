@@ -2,9 +2,6 @@
   background-color: take-color("light-black");
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    height: 464px;
-  }
 }
 .container-footer {
   display: flex;
@@ -26,10 +23,6 @@
   @media screen and (max-width: 767.98px) {
     margin: 0 auto;
   }
-  &__webstudio {
-    text-align: center;
-    display: block;
-  }
   @media screen and (min-width: 768px) {
     display: inline-flex;
     justify-content: flex-start;
@@ -37,6 +30,10 @@
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
+  }
+  &__webstudio {
+    text-align: center;
+    display: block;
   }
 }
 .webstudio {
@@ -83,6 +80,9 @@
     display: block;
     margin-bottom: 4px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
 }
 .social-list {
@@ -147,7 +147,6 @@
     margin: 0 auto;
     @media screen and (min-width: 1200px) {
       display: inline-flex;
-      align-items: center;
     }
   }
   &__icon {
