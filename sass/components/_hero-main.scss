@@ -6,6 +6,20 @@
   margin: 0 auto;
   padding: 118px 0;
   background-color: take-color("light-grey");
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(47, 48, 58, 0.4)),
+      to(rgba(47, 48, 58, 0.4))
+    ),
+    url("/images/mobile/compressed/hero-background@1x.png");
+  background-image: -o-linear-gradient(
+      left,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("/images/mobile/compressed/hero-background@1x.png");
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -13,8 +27,24 @@
     ),
     url("/images/mobile/compressed/hero-background@1x.png");
   @media screen and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("/images/mobile/compressed/hero-background@2x.png");
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/mobile/compressed/hero-background@2x.png");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -25,6 +55,20 @@
 }
 @media screen and (min-width: 768px) {
   .hero-section {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("/images/tablet/compressed/hero-background@1x.png");
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/tablet/compressed/hero-background@1x.png");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -32,8 +76,24 @@
       ),
       url("/images/tablet/compressed/hero-background@1x.png");
     @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+        ),
+        url("/images/tablet/compressed/hero-background@2x.png");
+      background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/tablet/compressed/hero-background@2x.png");
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
@@ -46,6 +106,20 @@
 @media screen and (min-width: 1200px) {
   .hero-section {
     padding: 200px 0;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(rgba(47, 48, 58, 0.4)),
+        to(rgba(47, 48, 58, 0.4))
+      ),
+      url("/images/desktop/compressed/hero-background@1x.png");
+    background-image: -o-linear-gradient(
+        left,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("/images/desktop/compressed/hero-background@1x.png");
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
@@ -53,8 +127,24 @@
       ),
       url("/images/desktop/compressed/hero-background@1x.png");
     @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(rgba(47, 48, 58, 0.4)),
+          to(rgba(47, 48, 58, 0.4))
+        ),
+        url("/images/desktop/compressed/hero-background@2x.png");
+      background-image: -o-linear-gradient(
+          left,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/desktop/compressed/hero-background@2x.png");
       background-image: linear-gradient(
           to right,
           rgba(47, 48, 58, 0.4),
