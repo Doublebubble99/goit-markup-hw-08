@@ -3,15 +3,13 @@
 }
 .logo-list {
   display: flex;
+  gap: $offset;
   @media screen and (max-width: 1199.98px) {
     flex-wrap: wrap;
-    gap: $offset;
   }
   &__item {
     flex-basis: calc((100% - 30px) / 2);
     height: 92px;
-    margin-right: auto;
-    margin-left: auto;
   }
   &__item {
     @media screen and (min-width: 768px) {
@@ -20,7 +18,6 @@
   }
   &__item {
     @media screen and (min-width: 1200px) {
-      flex-wrap: nowrap;
       flex-basis: calc((100% - 5 * 30px) / 6);
     }
   }

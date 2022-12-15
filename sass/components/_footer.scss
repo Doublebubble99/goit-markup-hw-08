@@ -96,9 +96,9 @@
 .subscribe-container {
   &__title {
     display: flex;
+    justify-content: center;
     @include subtitle(take-color("white"));
     margin-bottom: 20px;
-    justify-content: center;
     @media screen and (min-width: 1200px) {
       justify-content: flex-start;
     }
@@ -125,10 +125,14 @@
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     margin-bottom: 20px;
+    @media screen and (min-width: 768px) {
+      min-width: 450px;
+    }
     @media screen and (min-width: 1200px) {
       width: 358px;
       margin-right: 12px;
       margin-bottom: 0;
+      display: inline-flex;
     }
     &::placeholder {
       font-size: $small;

@@ -135,22 +135,3 @@
     fill: currentColor;
   }
 }
-.header-social {
-  display: inline-flex;
-  margin-top: 64px;
-  &__link {
-    font-weight: $normal;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    letter-spacing: 0.02em;
-    color: #2196f3;
-  }
-  &__sign {
-    display: inline-block;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    width: 22px;
-    height: 0px;
-    vertical-align: middle;
-  }
-}

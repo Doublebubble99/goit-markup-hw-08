@@ -35,7 +35,7 @@
   margin-right: auto;
   overflow-y: scroll;
   transform: translatey(-100%);
-  width: 480px;
+  max-width: 480px;
   height: 100vh;
   background-color: take-color("white");
   z-index: 999;
@@ -84,5 +84,32 @@
     line-height: calc(28 / 24);
     letter-spacing: 0.02em;
     color: take-color("grey");
+  }
+}
+.header-social {
+  display: flex;
+  margin-top: 64px;
+  flex-wrap: wrap;
+  &__item {
+    position: relative;
+    margin-right: 20px;
+  }
+  &__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+    left: 100%;
+    top: 50%;
+    width: 22px;
+    height: 0px;
+    vertical-align: middle;
+  }
+  &__link {
+    font-weight: $normal;
+    font-size: 18px;
+    line-height: calc(22 / 18);
+    letter-spacing: 0.02em;
+    color: #2196f3;
   }
 }
