@@ -6,6 +6,8 @@
   }
   &__item {
     background-color: take-color("white");
+    display: flex;
+    flex-direction: column;
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px) / 2);
     }
@@ -19,7 +21,7 @@
     }
   }
   &__link {
-    display: block;
+    flex-grow: 1;
     transition: box-shadow $duration $bezier;
     &:hover,
     &:focus {
@@ -58,13 +60,15 @@
   }
 }
 .text-portfolio {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    &--offset {
+      padding-bottom: 56px;
+    }
+  }
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-    padding: 20px 0 20px 24px;
-  }
   &__subtitle {
     font-weight: $bold;
     font-size: $little;
